@@ -89,7 +89,7 @@
 |     (WAN PB-VIT)   200.136.91.224           |        255.255.255.252         |      200.136.91.238             |      Se0/0/0              | 
 |          (LANM)  200.136.91.0       |     255.255.255.192            |                  200.136.91.238 |      Se0/0/0              | 
 |       (LANF1) 200.136.91.64            |     255.255.255.224            |                 200.136.91.238  |         Se0/0/0           | 
-|   (LANF2)   200.136.91.96             |    255.255.255.224             |        200.136.91.238           |           Se0/0/0         | 
+|   (LANF2)   200.136.91.96             |    255.255.255.224             |        200.136.91.242          |           Fa0/1         | 
 
 #### Roteador Coronel Vivida
 |  Rede de Destino  |     Máscara     |     Next Hop      | Interface de Saída |
@@ -139,7 +139,7 @@
 |     (WAN PB-VIT)   2001:DB8:CAFE:5BFF::0/112   |   2001:DB8:CAFE:5BFF::3:2/112 | Se0/0/0              | 
 |          (LANM) 2001:DB8:CAFE:5B00::/64    | 2001:DB8:CAFE:5BFF::3:2/112  |   Se0/0/0              | 
 |       (LANF1) 2001:DB8:CAFE:5B01::/64      |  2001:DB8:CAFE:5BFF::3:2/112  | Se0/0/0           | 
-|   (LANF2)   2001:DB8:CAFE:5B02::/64  |   2001:DB8:CAFE:5BFF::3:2/112     |   Se0/0/0         | 
+|   (LANF2)   2001:DB8:CAFE:5B02::/64  |   2001:DB8:CAFE:5BFF::4:2/112    |   Fa0/1        | 
       
 #### Roteador Coronel Vivida
 | Rede de Destino/Prefixo      | Next Hop                     | Interface de Saída |
