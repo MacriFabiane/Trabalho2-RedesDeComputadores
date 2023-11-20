@@ -110,44 +110,47 @@
 |           (WAN FB-ITA) 2001:DB8:CAFE:5BFF::2/112          |   2001:DB8:CAFE:5BFF::0:2/112               |Se0/0/0      | 
 |   (WAN ITA-CV) 2001:DB8:CAFE:5BFF::4/112          |        2001:DB8:CAFE:5BFF::0:2/112         |        Se0/0/0            | 
 |       (LANF1)   2001:DB8:CAFE:5B01::/64        |     2001:DB8:CAFE:5BFF::0:2/112            |          Se0/0/0          | 
-|       (LANF2)    2001:DB8:CAFE:5B01::/64                  |  2001:DB8:CAFE:5BFF::0:2/112               |     Se0/0/0               | 
+|       (LANF2)    2001:DB8:CAFE:5B02::/64                  |  2001:DB8:CAFE:5BFF::0:2/112               |     Se0/0/0               | 
       
       
 #### Roteador Francisco Beltrão
 | Rede de Destino/Prefixo      | Next Hop                     | Interface de Saída |
 |------------------------------|------------------------------|--------------------|
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
+|      (WAN PB-VIT) 2001:DB8:CAFE:5BFF::0/112       |      	2001:DB8:CAFE:5BFF::2:2/112           |       Se0/0/0             | 
+|        (WAN ITA-CV) 2001:DB8:CAFE:5BFF::4/112            |      2001:DB8:CAFE:5BFF::2:2/112               |    Se0/0/0                | 
+|         (WAN ITA-PB)  2001:DB8:CAFE:5BFF::3/112           |               2001:DB8:CAFE:5BFF::2:2/112      |      Se0/0/0              | 
+|       (LANM)  2001:DB8:CAFE:5B00::/64      |                2001:DB8:CAFE:5BFF::2:2/112     |     Se0/0/0               | 
+|   (LANF2)    2001:DB8:CAFE:5B02::/64    |              2001:DB8:CAFE:5BFF::2:2/112       |        Se0/0/0            | 
       
 #### Roteador Vitorino
 | Rede de Destino/Prefixo      | Next Hop                     | Interface de Saída |
 |------------------------------|------------------------------|--------------------|
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
+|     (WAN FB-ITA)    2001:DB8:CAFE:5BFF::2/112       |       2001:DB8:CAFE:5BFF::1:2/112        |       Se0/0/0             | 
+|      (WAN ITA-CV)   2001:DB8:CAFE:5BFF::4/112       |      2001:DB8:CAFE:5BFF::1:2/112          |          Se0/0/0          | 
+|     (WAN ITA-PB)   2001:DB8:CAFE:5BFF::3/112      |               2001:DB8:CAFE:5BFF::1:2/112     |          Se0/0/0          | 
+|       (LANM) 2001:DB8:CAFE:5B00::/64      |             2001:DB8:CAFE:5BFF::1:2/112       |        Se0/0/0            | 
+|         (LANF1)   2001:DB8:CAFE:5B01::/64        |             2001:DB8:CAFE:5BFF::1:2/112       |      Se0/0/0              |                 
+|      (LANF2)  2001:DB8:CAFE:5B02::/64   |    2001:DB8:CAFE:5BFF::1:2/112           |   Se0/0/0      |
       
 #### Roteador Itapejara D'Oeste
 | Rede de Destino/Prefixo      | Next Hop                     | Interface de Saída |
 |------------------------------|------------------------------|--------------------|
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
+|     (WAN VIT-FB)   2001:DB8:CAFE:5BFF::1/112   |         2001:DB8:CAFE:5BFF::3:2/112 |       Se0/0/0             | 
+|     (WAN PB-VIT)   2001:DB8:CAFE:5BFF::0/112   |   2001:DB8:CAFE:5BFF::3:2/112 | Se0/0/0              | 
+|          (LANM) 2001:DB8:CAFE:5B00::/64    | 2001:DB8:CAFE:5BFF::3:2/112  |   Se0/0/0              | 
+|       (LANF1) 2001:DB8:CAFE:5B01::/64      |  2001:DB8:CAFE:5BFF::3:2/112  | Se0/0/0           | 
+|   (LANF2)   2001:DB8:CAFE:5B02::/64  |   2001:DB8:CAFE:5BFF::3:2/112     |   Se0/0/0         | 
       
 #### Roteador Coronel Vivida
 | Rede de Destino/Prefixo      | Next Hop                     | Interface de Saída |
 |------------------------------|------------------------------|--------------------|
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
-|                              |                              |                    |
+|     (WAN FB-ITA)    2001:DB8:CAFE:5BFF::2/112     |        2001:DB8:CAFE:5BFF::4:1/112        |       Fa0/1            | 
+|      (WAN PB-VIT) 2001:DB8:CAFE:5BFF::0/112   |       2001:DB8:CAFE:5BFF::4:1/112          |          Fa0/1         | 
+|     (WAN ITA-PB)    2001:DB8:CAFE:5BFF::3/112   |                2001:DB8:CAFE:5BFF::4:1/112     |          Fa0/1         | 
+|(WAN VIT-FB)  2001:DB8:CAFE:5BFF::1/112      |          2001:DB8:CAFE:5BFF::4:1/112        | Fa0/1  |
+|       (LANM) 2001:DB8:CAFE:5B00::/64   |            2001:DB8:CAFE:5BFF::4:1/112       |        Fa0/1           | 
+|         (LANF1)   2001:DB8:CAFE:5B01::/64      |              2001:DB8:CAFE:5BFF::4:1/112       |      Fa0/1             |                 
+|      (LANF2)  2001:DB8:CAFE:5B02::/64  |     2001:DB8:CAFE:5BFF::4:1/112           |   Fa0/1     |
 
 ## Topologia - Packet Tracer
 - [ ] ![Trabalho2-Topologia-NomeAluno](trabalho2-20222-topologia-NomeAluno.pkt)
